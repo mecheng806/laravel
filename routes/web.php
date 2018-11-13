@@ -28,4 +28,5 @@ Route::get('/data/{id}',function($id){
 Route::get('/test',function(){
 	return view('admin.test1',['age'=>25]);
 });
-Route::get('post/');
+Route::get('post/create','Test\TestController@create');
+Route::post('post','Test\TestController@store');
