@@ -30,3 +30,5 @@ Route::get('/test',function(){
 });
 Route::get('post/create','Test\TestController@create');
 Route::post('post','Test\TestController@store');
+Route::get('post/list','Test\TestController@list');
+Route::get('post/edit','Test\TestController@edit');
